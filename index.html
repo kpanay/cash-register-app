@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -18,17 +23,19 @@
             </p>
 
             <label for="bill-amount" class="input-label">Amount Bill: </label>
-            <input type="text" class="amount-bill" placeholder="Enter bill amount">
+            <input type="text" class="input" id="bill-amount" placeholder="Enter bill amount">
 
-            <label for="given-cash" class="given-cash">Given cash: </label>
-            <input type="text" class="given-cash" placeholder="Enter given cash">
+            <label for="given-cash" class="input-label">Given cash: </label>
+            <input type="text" class="input" id="given-cash" placeholder="Enter given cash">
             <button id="check-button">Check</button>
+            <p id="error-message"></p>
+            <caption>Return Change</caption>
 
             <table class="change-table">
-                <caption>Return Change</caption>
                 <tbody>
                     <tr>
                         <th>No of Notes</th>
+                        <th class="no-of-notes"></th>
                         <th class="no-of-notes"></th>
                         <th class="no-of-notes"></th>
                         <th class="no-of-notes"></th>
@@ -52,21 +59,18 @@
         </div>
     </main>
 
+
     <footer>
-        <p>© | 2023 | pranayshende</p>
-        <ul class="footer-list">
-            <li>
-                <a href="">
-                    <img src="git.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="portfolio.svg" alt="">
-                </a>
-            </li>
-        </ul>
+        <div class="copyright">
+            <p>&copy 2023 - pranayshende</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/kpanay" class="git">git</a>
+            <a href="https://pranayshende.netlify.app/" class="profile">profile</a>
+        </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
